@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Contact us</title>
+</head>
+<body class="text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand text-light" href="index.html" id="brand"><h2>My Robot</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="toggle collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="menu-navbar">
+              <li class="nav-item">
+                <a href="index.html" class="nav-item nav-link text-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="products.html" class="nav-item nav-link text-light">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-item nav-link text-light">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav>
+    <main class="main-form-container bg-light">
+    <div class="container">
+        <div class="row">
+          <div class="col-6 mt-5 mb-5 justify-content-end">
+            <form class="bg-dark" action="mailto:mchamosocu@tauformar.com?subject=I want my robot" method="POST" enctype="text/plain">
+                <label for="firstname">First name: </label>
+                <input type="text" name="firstname" maxlength="20" placeholder="First name" required>
+                <br>
+                <label for="lastname">Last name: </label>
+                <input type="text" name="lastname" maxlength="20" placeholder="Last name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email" required/>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" value="age" placeholder="Age">
+                <br>
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment-container" cols="20" rows="5" placeholder="Drop here your feedback about us"></textarea>
+                <br>
+                <input type="submit" value="Buy my robot" id="submit"/>
+            </form>
+          </div>
+          <div class="col-6 mt-5">
+            <img src="img/contact.jpg" alt="Contact" id="contact">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="my-5">
+        <footer class="text-center text-white">
+            <hr class="my-5" /> 
+            <section class="text-center mb-5">
+                <h2 class="mb-4"><a href="index.html">My Robot</a></h2>
+                <div class="footer-menu">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </section>
+            <section class="social-links text-center mb-5">
+            <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+            </a>
+            </section>
+        </div>
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+            © 2023 Copyright:<a class="text-white" href="https://mdbootstrap.com/"> Manuela Chamoso</a>
+        </footer>
+        </div>
+</body>
+</html>

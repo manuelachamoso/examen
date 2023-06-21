@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Expletus+Sans:wght@600&family=Roboto:wght@300;400&display=swap');
+
+/* Root */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Audiowide', cursive;
+}
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    margin: 1rem;
+    text-align: justify;
+}
+
+/* Navbar */
+
+#menu-navbar a {
+    padding: 1rem 2.5rem;
+}
+
+.carousel-item  {
+    height: 90vh;
+}
+
+/* Home */
+
+.main-container {
+    margin: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.owner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .owner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 700px) {
+    .owner img {
+        width: 100%;
+        height: 250px;
+    }
+    .carousel-item  {
+        height: 50vh;
+    }
+}
+
+button, a:focus  {
+    outline: none;
+}
+
+.owner-image img {
+    width: fit-content;
+}
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu a{
+    margin: 0 1.5rem;
+    transition: 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-menu a:hover{
+    transform: scale(1.3) translateY(-5px);
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-links i{
+    position: absolute;
+    padding: 10px;
+    font-size: 30px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    width: 40px;
+}
+
+.social-links i:hover {
+    transform: scale(1.3) translateY(-5px);
+    text-decoration: none;
+
+}
+
+/* Products */
+.cards-products {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.cards-products img {
+    height: 250px;
+}
+
+
+/* Contact */
+form {   
+    padding: 2rem;
+    border-radius: 10px;
+    height: 550px;
+}
+
+#contact {
+    width: 800px;
+    height: 550px;
+    margin-left: -2rem;
+}
+
+label{
+    font-size: 14px;
+    color: white;
+    margin-top: 1rem;
+}
+
+input:not(#checkbox, #submit) {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: border-color 0.3s ease-in-out; 
+    
+}
+
+input, textarea {
+    color: black;
+    background-color: white;
+}
+
+:focus:not(.navbar-toggler) {
+    outline: 2px solid rgb(59, 135, 223);
+    color: rgb(10, 8, 104);
+}
+
+#date {
+    margin-top: 0.5rem;
+}
+
+textarea {
+    height: 70px;
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    font-size: 13px;
+    color: black;
+    transition: border-color 0.3s ease-in-out;
+}
+
+::placeholder, #date {
+    font-size: 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+#date, #submit {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    display: flex;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.2rem 0.75rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(10, 8, 104);
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    transform: scale(0.95);
+}
+
+#checkbox {
+    margin-right: 0.2rem;
+}
+
+input:empty:not(#submit) {
+    padding-left: 0.3rem;
+}
+
+a:hover, i:hover {
+    color: #7B0D1E;
+    --bs-link-color-rgb: none;
+    outline: none;
+}
